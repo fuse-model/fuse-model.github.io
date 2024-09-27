@@ -1,1 +1,368 @@
-Hello FuSe
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJF0VCRK33"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FJF0VCRK33');
+  </script>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Beyond Sight: Finetuning Generalist Robot Policies with Heterogeneous Sensors via Language Grounding">
+  <meta name="keywords" content="Imitation Learning, Robotics, Behavior cloning, Robotic manipulation, Multimodal learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FuSe</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column ">
+          <h1 class="title is-1 publication-title" style="font-weight:50%">
+            Beyond Sight
+            <br>
+            <span style="font-size:2.1rem; font-weight:6">Finetuning Generalist Robot Policies with Heterogeneous Sensors via Language Grounding</span>
+          </h1>
+          <!-- <h1 class="title is-1 publication-title">
+            CrossFormer: Scaling Cross-Embodied Learning for Manipulation, Navigation, Locomotion, and Aviation
+          </h1> -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block" >
+              <a style="font-weight: 500;" href="https://www.linkedin.com/in/joshua-w-jones/" target="_blank">Joshua Jones</a><sup>*1</sup>,
+            </span>
+            <span class="author-block">
+              <a style="font-weight: 500;" href="https://www.oiermees.com/" target="_blank">Oier Mees</a><sup>*1</sup>,
+            </span>
+            <span class="author-block">
+              <a style="font-weight: 500;" href="https://sferrazza.cc/" target="_blank">Carmelo Sferrazza</a><sup>*1</sup>,
+            </span>
+            <span class="author-block">
+              <a style="font-weight: 500;" href="https://kylesta.ch/" target="_blank">Kyle Stachowic</a>z<sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a style="font-weight: 500;" href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank">Pieter Abbeel</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a style="font-weight: 500;" href="https://people.eecs.berkeley.edu/~svlevine/" target="_blank">Sergey Levine</a><sup>1</sup>
+            </span>
+          <!-- <div class="column"> -->
+            <br>
+            <span class="author-block"><sup><font size="-0.4">* </sup>Equal contribution,    <sup><font size="-0.4">1 </sup>UC Berkeley</font></span> 
+            <br><br>
+            <span class="author-block" style="font-size:1.2rem; font-style:italic">Submitted to the International Conference on Robotics & Automation (ICRA), 2025</span> 
+            
+            <br> <br>   
+            <!-- <br><br> --> 
+            <!-- <div class="publication-links">
+          
+              <span class="link-block" >
+                <a href="TODO-ARXIV-LINK" 
+                   target="_blank"
+                   class="external-link button is-normal is-rounded is-dark" >
+                  <span class="icon" style="color:#f5f3f3">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span style="color:#f5f3f3">Paper</span>
+                </a>
+              </span> 
+              <span class="link-block">
+                <a href="TODO-CODE_LINK"
+                   target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span style="color:#f5f3f3" class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span style="color:#f5f3f3">Code</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="TODO-HF-LINK"
+                   target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span style="color:#f5f3f3" class="icon">
+                    <i class="fas fa-weight-hanging"></i>
+                  </span>
+                  <span style="color:#f5f3f3">Model/Dataset</span>
+                </a>
+              </span>
+            </div> -->
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- <section class="hero teaser"> -->
+    <div class="container is-max-desktop">
+        <!-- <div class="hero-body"> -->
+            <video preload="auto" class="" id="home_vid" autoplay controls muted loop playsinline height="100%" width="100%" controls loop>
+                <source src="./static/videos/fuse/fuse_icra_2025_final_compressed.mp4"
+                        type="video/mp4">
+            </video>
+            <br><br>
+            <h2 class="subtitle has-text-centered scroll-element" >
+                FuSe improves performance across a number of tasks and settings and enables cross-modal reasoning
+            </h2>
+        <!-- </div> -->
+    </div>
+<!-- </section> -->
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <!-- <div class="columns is-centered has-text-centered"> -->
+      <!-- <div class="column is-four-fifths"> -->
+        <br>
+        <h2 class="title is-3 scroll-element">Abstract</h2>
+        <div class="content has-text-justified scroll-element">
+          <p>
+            Interacting with the world is a multi-sensory experience: achieving effective general-purpose interaction requires making use of all available modalities -- including vision, touch, and audio -- to fill in gaps from partial observation. 
+            For example, when vision is occluded reaching into a bag, a robot should rely on its senses of touch and sound. However, state-of-the-art generalist robot policies are typically trained on large datasets to predict robot actions solely from visual and proprioceptive observations.
+          </p>
+          <p>  
+            In this work, we propose <b>FuSe</b>, a novel approach that enables finetuning visuomotor generalist policies on heterogeneous sensor modalities for which large datasets are not readily available by leveraging natural language as a common cross-modal grounding. 
+            We combine a multimodal contrastive loss with a sensory-grounded language generation loss to encode high-level semantics. In the context of robot manipulation, we show that FuSe enables performing challenging tasks that require reasoning jointly over modalities such as vision, touch, and sound in a zero-shot setting, such as multimodal prompting, compositional cross-modal prompting, and descriptions of objects it interacts with. 
+            We show that the same recipe is applicable to widely different generalist policies, including both diffusion-based generalist policies and large vision-language-action (VLA) models. Extensive experiments in the real world show that FuSe is able to increase success rates by over 20% compared to all considered baselines.
+          </p>
+
+        </div>
+      <!-- </div> -->
+    <!-- </div> -->
+  </div>
+</section>
+<!--/ Abstract. -->
+
+<section class="section">  
+  <div class="container is-max-desktop">
+  
+  <div class="container is-max-desktop">
+    <!-- <div class="columns is-centered has-text-centered"> -->
+      <!-- <div class="column is-four-fifths"> -->
+        <h2 class="title is-3 scroll-element">Approach</h2>
+        <br>
+        <!-- <div class="hero-body"> -->
+          <img class="scroll-element" id="teaser" src="./static/images/fuse_teaser.png" alt="FuSe teaser image."/>
+          <br>
+          <p class="scroll-element" style="text-align:center">FuSe Method.</p>
+        <br>
+        <!-- </div> -->
+        <div class="content has-text-justified scroll-element">
+          <p>
+            Naïvely finetuning a pre-trained generalist policy with a mean-square-error (MSE) imitation loss conditioned on additional sensor data leads to the policy over-relying on its pretraining modalities and ignoring the new modalities.
+            FuSe overcomes this limitation by introducing two additional losses that fully leverage multimodality and connect the semantic knowledge of pre-trained generalist policies with unseen sensor modalities:
+            <ul>
+              <li><i>Multimodal Contrastive Loss:</i> A CLIP-style contrastive learning loss aims to maximize mutual information between different modalities and semantics of the same scene.
+                  Concretely, we build an observation embedding by feeding all modalities once more through the transformer and combining them via a multi-head attention layer. We then compute a CLIP loss for each possible instruction resulting from combining the different available modalities. These losses are finally averaged to form a combined multimodal contrastive loss.</li>
+              <li><i>Multimodal Generative Loss:</i> We design a generative network that functions as an add-on head to the backbone model. 
+                In practice, for each possible modality combination, we build an observation embedding as above, and feed it through the generative head.
+                Then, we compute an auxiliary cross-entropy loss by comparing the head output with the appropriate language instruction. 
+                We use a single transformer as the generative head for all possible modality combinations, with modality tokens to distinguish between input modalities. </li>
+            </ul>
+          </p>
+
+          <br>
+          <br>
+          <img class="scroll-element" id="teaser" src="./static/images/fuse_architecture.png" alt="FuSe architecture."/>
+          <br>
+          <p class="scroll-element" style="text-align:center">FuSe Architecture.</p>
+
+        </div>
+      <!-- </div> -->
+    <!-- </div> -->
+  </div>
+</section>
+<!--/ Abstract. -->
+
+<!-- Architecture Diagram -->
+<!-- <section class="hero teaser scroll-element">
+    
+    
+</section> -->
+<!--/ Architecture Diagram. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 scroll-element">Dataset</h2>
+        <br>
+        <p class="scroll-element">
+          We collect a dataset of 26,866 trajectories over three challenging tasks where the robot is teleoperated using a Meta Oculus Quest 2 VR headset. The tasks are: 
+        </p>
+        <ol class="scroll-element indented-list">
+          <li><i>Grasping, tabletop</i>: Multiple obejcts are placed on a tray, and the robot must grasp and lift the correct one, as prompted by a text command. </li>
+          <li><i>Grasping, shopping bag</i>: Similar to (1); however, third-person vision is heavily occluded once the arm enters the bag, and lighting is affected significantly.</li>
+          <li><i>Button pressing</i>: Multiple colored, sound-playing buttons are placed on a tray, along with distractors. The robot is prompted to press a button, causing a short audio clip to be played.
+                We also include some compositional trajectories in this setting: the robot is instead prompted to grasp the distractor sharing the same visual characteristics as a button, e.g. "grab the object that has the same color as the button that plays piano"
+          </li>
+          </ol>
+          <br>
+          <img class="scroll-element" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="./static/images/fuse-robot.png" alt="Robot setup with sensors"/>
+          <p style="text-align: center;">Sensor setup.</p>
+          <br>
+          <p class="scroll-element">
+          The two grasping tasks (tabletop and shopping bag) feature visual, tactile, and action data, while the button pressing and compositional tasks also include sound.
+          Visual observations are recorded at a resolution of 640x480, while tactile DIGIT images are at a resolution of 320x240. 
+          The audio observations comprise 1s of the most recent microphone samples, recorded at a frequency of 44,100Hz.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <!-- <div class="columns is-centered has-text-centered"> -->
+        <h2 class="title is-3 scroll-element">Results</h2>
+        <!-- <div class="hero-body"> -->
+          <br>
+          <div class="grid-container">
+            <figure>
+                <img class="scroll-element" src="static/images/bar_chart_Tabletop Grasping.png" alt="Bar chart of results for tabletop grasping">
+            </figure>
+            <figure>
+                <img class="scroll-element" src="static/images/bar_chart_Shopping Bag.png" alt="Bar chart of results for grasping in a shopping bag">
+            </figure>
+            <figure>
+                <img class="scroll-element" src="static/images/bar_chart_Button Pressing.png" alt="Bar chart of results for button pressing">
+            </figure>
+            <figure>
+                <img class="scroll-element" src="static/images/bar_chart_average.png" alt="Bar chart of average results">
+            </figure>
+        </div>
+        <img class="scroll-element legend" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="static/images/legend.png" alt="Legend for bar charts">
+          <p class="scroll-element" style="text-align:center"> We compare FuSe to several baselines. Octo Vision FT refers to a pretrained Octo model finetuned on our dataset, using only vision modalities;
+            Octo scratch refers to training an Octo transformer of the same size from scratch on our dataset, using all modalities; ResNet Scratch refers to training a smaller ResNet-based model on all modalities from scratch.
+          </p>
+        <!-- </div> -->
+         <br>
+        <p class = "scroll-element">
+          FuSe outperforms baselines over all environments, most significantly in the partially-observable shopping bag task. 
+        </p>
+        <br><br>
+        
+        <h3 class="title is-4 scroll-element">Compositional Capabilities</h3>
+        <div class="content has-text-justified scroll-element">
+
+          FuSe also enables both simple and complex cross-modal reasoning capabilities. We demonstrate this through two tasks.
+
+          <br>
+          <br>
+          <h4 class="title scroll-element" style="font-size: 13pt;">Simple Task</h4>
+          <img class="scroll-element center" src="static/images/bar_chart_Compositional Task - Simple.png" alt="Results of simple compositional task.">
+          We prompt the policy to grab an object that has the same color as the training button that plays a certain sound (e.g., "grab the object with the same color as the button that plays piano")
+
+
+          <br>
+          <br>
+          <h4 class="title scroll-element" style="font-size: 13pt;">Multi-step Task</h4>
+          <img class="scroll-element center" src="static/images/bar_chart_Compositional Task - Multi-step.png" alt="Results of multi-step compositional task.">
+          <p>
+            We exploit the generative head to connect between different subtasks. 
+            First, we prompt the model to press a button not seen at training time, using only visual instructions (e.g., "press the blue button"); this button plays a sound heard during training.
+            Then, we feed the resulting sound to the generative head, which will generate the instruction related to the corresponding audio (e.g., "press the button that plays piano"). 
+            Finally, we prompt the model with the audio instruction in the training environment, where the model has already associated the visual cues of the button to the corresponding sound, and will execute a trajectory that ends up pressing the button that plays the same sound as the button pressed in the first subtask.
+          </p>
+            
+          <video preload="auto" class="" id="comp_vid" autoplay controls muted loop playsinline height="100%" width="100%" controls loop>
+                <source src="./static/videos/fuse/compositional_sound_2.mp4"
+                        type="video/mp4">
+            </video>
+            <p class="subtitle has-text-centered scroll-element" >
+              The robot is prompted to press the (unseen) pink button, and then based on audio output generates the command "Push the green button", which it executes.
+            </p>
+        </div>
+
+        <h3 class="title is-4 scroll-element">Other Architectures</h3>
+        <p class="has-text-justified scroll-element">
+          Although most of our experiments are with an Octo transformer, the FuSe method is widely applicable. We apply it to a PaliGemma-based 3B-parameter VLA in our test environments,
+          pretrained on BridgeData V2 and finetuned on our multimodal dataset.
+        </p>
+        <img class="scroll-element center" src="static/images/bar_chart_pali_FuSe-VLA(ours)-1.png" alt="Results of FuSe VLA policy.">
+        
+        
+        Our policy achieves robust performance on the grasping tasks, showcasing the suitability of FuSe to
+        different generalist policies.
+        
+      </div>
+    </div>
+    <!--/ Animation. -->
+  </div> 
+
+
+</section>
+
+<!-- <section class="section scroll-element" id="BibTeX"> -->
+  <!-- <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code> @article{TODO,
+      title={Beyond Sight: Finetuning Generalist Robot Policies with Heterogeneous Sensors via Language Grounding},
+      author={Joshua Jones and Oier Mees and Carmelo Sferrazza and Kyle Stachowicz and Pieter Abbeel and Sergey Levine},
+      journal={TODO},
+      year={2024}
+  }</code></pre>
+  </div> -->
+
+<!-- </section> -->
+
+<!-- <footer class="footer"> -->
+  <div class="container" style="padding-bottom:40px">
+    <div class="content has-text-centered">
+      <br>
+      <br>
+      <p>
+        This website was adapted from the source code  <a
+          href="https://github.com/nerfies/nerfies.github.io" target="_blank">here</a> and 
+          <a href="https://github.com/crossformer-model/crossformer-model.github.io" target="_blank">here</a>.
+      </p>
+    </div>
+  </div>
+<!-- </footer> -->
+
+<script>
+  var home_vid = document.getElementById('home_vid');
+  home_vid.addEventListener('canplay', function() {
+    home_vid.play();
+  });
+
+  var comp_vid = document.getElementById('comp_vid');
+  comp_vid.addEventListener('canplay', function() {
+    comp_vid.play();
+  });
+  // Access the video element
+
+</script>
+
+</body>
+</html>
