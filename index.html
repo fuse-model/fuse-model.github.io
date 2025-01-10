@@ -298,16 +298,18 @@
                         type="video/mp4">
             </video>
             <p class="subtitle has-text-centered scroll-element" >
-              The robot is prompted to press the (unseen) pink button, and then based on audio output generates the command "Push the green button", which it executes.
+              The robot is prompted to press the (unseen) pink button, and then based on audio output generates the command "Push the button that plays metal music", which it executes.
             </p>
         </div>
 
         <h3 class="title is-4 scroll-element">Other Architectures</h3>
         <p class="has-text-justified scroll-element">
           Although most of our experiments are with an Octo transformer, the FuSe method is widely applicable. We apply it to a PaliGemma-based 3B-parameter VLA in our test environments,
-          pretrained on BridgeData V2 and finetuned on our multimodal dataset.
+          pretrained on OXE and finetuned on our multimodal dataset.
         </p>
-        <img class="scroll-element center" src="static/images/bar_chart_pali_FuSe-VLA(ours)-1.png" alt="Results of FuSe VLA policy.">
+        <img class="scroll-element center" src="static/images/pali_bar_chart_TabletopGrasping.pdf" alt="Results of VLA FuSe policy.">
+        <img class="scroll-element center" src="static/images/pali_bar_chart_ShoppingBag.pdf" alt="Results of VLA FuSe policy.">
+        <img class="scroll-element center" src="static/images/pali_bar_chart_ButtonPressing.pdf" alt="Results of VLA FuSe policy.">
         
         
         Our policy achieves robust performance on the grasping tasks, showcasing the suitability of FuSe to
@@ -324,10 +326,11 @@
 <section class="section scroll-element" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code> @article{jones24-fuse,
+    <pre><code> @article{jones25-fuse,
       title={Beyond Sight: Finetuning Generalist Robot Policies with Heterogeneous Sensors via Language Grounding},
       author={Joshua Jones and Oier Mees and Carmelo Sferrazza and Kyle Stachowicz and Pieter Abbeel and Sergey Levine},
-      year={2024}
+      journal={arXiv preprint arXiv:2501.04693},
+      year={2025}
   }</code></pre>
   </div>
 
